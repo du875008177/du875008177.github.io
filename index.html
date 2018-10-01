@@ -46,7 +46,7 @@
 	<script src="js/mo.min.js"></script>
 	<script src="js/mojs-player.min.js"></script>
 
-<P><a href="http://www.ducool.top" target="_blank"><span id="sitetime"></span></a></P>
+<P><a href="http://www.ducool.top" target="_blank"><span id="sitetime">1</span></a></P>
 
 <script>
 'use strict';
@@ -85,8 +85,8 @@ document.addEventListener('click', function (e) {
 
     circle2.tune({ x: e.pageX, y: e.pageY }).replay();
 });
-	
-	
+	</script>
+	<script language=javascript>
 	function siteTime(){
 window.setTimeout("siteTime()", 1000);
 var seconds = 1000
@@ -120,9 +120,9 @@ var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours
 document.getElementById("sitetime").innerHTML=" 已运行"+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒"	
 }
 siteTime()
+</script>	
 	
-	
-</script>
+
 
 
 </body>
